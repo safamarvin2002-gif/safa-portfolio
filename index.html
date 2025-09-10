@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safa Marvin AP | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white font-sans scroll-smooth">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full bg-black bg-opacity-90 z-50 shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-turquoise">SAFA MARVIN AP</h1>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#about" class="hover:text-turquoise transition">About</a>
+        <a href="#education" class="hover:text-turquoise transition">Education</a>
+        <a href="#projects" class="hover:text-turquoise transition">Projects</a>
+        <a href="#skills" class="hover:text-turquoise transition">Skills</a>
+        <a href="#contact" class="hover:text-turquoise transition">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden text-white text-3xl focus:outline-none">&#9776;</button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2 text-center">
+      <a href="#about" class="block hover:text-turquoise transition">About</a>
+      <a href="#education" class="block hover:text-turquoise transition">Education</a>
+      <a href="#projects" class="block hover:text-turquoise transition">Projects</a>
+      <a href="#skills" class="block hover:text-turquoise transition">Skills</a>
+      <a href="#contact" class="block hover:text-turquoise transition">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="h-screen flex items-center justify-center bg-gradient-to-b from-black via-gray-900 to-black" id="home">
+    <div class="text-center px-4">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">
+        Hi, I’m <span class="text-turquoise">Safa Marvin AP</span>
+      </h2>
+      <p class="text-lg md:text-2xl text-gray-300">MCA Graduate | Data Analysis Intern | Tech Enthusiast</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-6 text-center">
+      <img src="./img/safa.jpg" alt="Safa" class="w-40 h-40 mx-auto mb-6 rounded-full border-4 turquoise-border shadow-lg">
+      <h2 class="text-3xl font-bold mb-4 text-turquoise">About Me</h2>
+      <p class="text-gray-300 max-w-3xl mx-auto leading-loose">
+       I'm Safa Marvin AP, an MCA graduate from Nirmala College, Muvattupuzha, and currently a Data Analysis Intern at Bridgeon. I'm passionate about solving real-world problems through code and love working across both data analysis and full-stack development.
+
+During my BCA, I built Safe Journey, a Python-based app focused on travel safety using location tracking and alert features. In my MCA mini project, I developed CAS Cake Bakery System, a bakery management web app using PHP and MySQL to streamline orders and customer records. For my MCA main project, I created Chat Hive, a real-time messaging platform using the MERN stack and Socket.io, allowing users to chat instantly in secure chat rooms.
+
+I enjoy creating clean, responsive web apps and exploring new tools and technologies to bring ideas to life.</p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-20 bg-black">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-10 text-turquoise">Education</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition">
+          <h3 class="text-2xl font-semibold mb-2">Master of Computer Applications</h3>
+          <p class="text-gray-400">Nirmala College, Muvattupuzha</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition">
+          <h3 class="text-2xl font-semibold mb-2">Bachelor of Computer Application</h3>
+          <p class="text-gray-400">Calicut University</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-black py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-5xl font-bold text-turquoise mb-16">My Projects</h2>
+      <div class="grid gap-12">
+        <div class="relative rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto transform hover:scale-105 transition duration-300 hover:shadow-2xl">
+          <img src="img/social media.png" alt="Chat Hive" class="w-full h-auto object-cover opacity-80">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-center items-center px-6 py-10">
+            <h3 class="text-3xl font-bold text-white mb-2">Chat Hive</h3>
+            <p class="text-white text-sm mb-4">MERN social app with real-time chat, content sharing, AI alerts, and auth.</p>
+          </div>
+        </div>
+        <div class="relative rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto transform hover:scale-105 transition duration-300 hover:shadow-2xl">
+          <img src="img/trivago.png" alt="Trivago Clone" class="w-full h-auto object-cover opacity-80">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-center items-center px-6 py-10">
+            <h3 class="text-3xl font-bold text-white mb-2">Trivago Clone</h3>
+            <p class="text-white text-sm mb-4">A responsive clone of Trivago’s homepage using HTML and CSS.</p>
+          </div>
+        </div>
+        <div class="relative rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto transform hover:scale-105 transition duration-300 hover:shadow-2xl">
+          <img src="img/navbar.png" alt="Navbar" class="w-full h-auto object-cover opacity-80">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-center items-center px-6 py-10">
+            <h3 class="text-3xl font-bold text-white mb-2">Navbar</h3>
+            <p class="text-white text-sm mb-4">W3Schools-inspired responsive navbar made with HTML and CSS.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8 text-turquoise">Skills</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold text-white">HTML</h3>
+          <div class="w-full bg-gray-700 rounded-full h-2.5 mt-2">
+            <div class="bg-turquoise h-2.5 rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-white">CSS</h3>
+          <div class="w-full bg-gray-700 rounded-full h-2.5 mt-2">
+            <div class="bg-turquoise h-2.5 rounded-full" style="width: 80%"></div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-white">JavaScript</h3>
+          <div class="w-full bg-gray-700 rounded-full h-2.5 mt-2">
+            <div class="bg-turquoise h-2.5 rounded-full" style="width: 70%"></div>
+          </div>
+        </div>
+        <!-- Add more skills here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-black text-white">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-4xl font-bold text-turquoise mb-8">Contact me</h2>
+          <p class="text-lg font-semibold mb-4">safamarvin2002@gmail.com</p>
+          <p class="text-lg font-semibold mb-8">7594933615</p>
+          <div class="flex space-x-6 mb-8">
+            <a href="https://linkedin.com" target="_blank" class="text-white text-2xl hover:text-turquoise"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank" class="text-white text-2xl hover:text-turquoise"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com" target="_blank" class="text-white text-2xl hover:text-turquoise"><i class="fab fa-instagram"></i></a>
+          </div>
+          <a href="cv.pdf" download class="bg-turquoise hover-bg-turquoise text-white font-bold py-3 px-6 rounded-lg turquoise-shadow inline-block">Download CV</a>
+        </div>
+        <form class="space-y-6">
+          <input type="text" placeholder="Enter your name" class="w-full bg-gray-800 text-white p-4 rounded-lg turquoise-ring placeholder-gray-400" />
+          <input type="email" placeholder="Enter your email" class="w-full bg-gray-800 text-white p-4 rounded-lg turquoise-ring placeholder-gray-400" />
+          <textarea rows="6" placeholder="Your message" class="w-full bg-gray-800 text-white p-4 rounded-lg turquoise-ring placeholder-gray-400"></textarea>
+          <button type="submit" class="w-full bg-turquoise hover-bg-turquoise text-white font-bold py-3 rounded-lg turquoise-shadow transition duration-300">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-center py-4 text-gray-400 text-sm">
+    © 2025 Safa Marvin AP. All rights reserved.
+  </footer>
+
+  <!-- Toggler Script -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
